@@ -600,6 +600,7 @@ main {
 }
 
 .deck-tabs button {
+  white-space: nowrap;
   padding: 1px 8px;
   font: inherit;
   font-size: 0.6875rem;
@@ -615,6 +616,14 @@ main {
   color: var(--accent);
   background: rgba(62, 224, 196, 0.08);
   border-color: rgba(62, 224, 196, 0.4);
+}
+
+/* Narrow screens: the card title already names KeelDeck, so drop the label
+   and keep the three tabs on one line. */
+@media (max-width: 420px) {
+  .deck-shot-label {
+    display: none;
+  }
 }
 
 .deck-tabs button:focus-visible {
