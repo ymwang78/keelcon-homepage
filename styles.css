@@ -373,6 +373,59 @@ main {
   color: #c79cff;
 }
 
+.pillar--keelbase .brand-word b {
+  color: #7c9cff;
+}
+
+/* KeelBase: interfaces on top of the two stores. */
+.base-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.base-api {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: center;
+  color: #c9d3ff;
+  background: rgba(124, 156, 255, 0.1);
+  border: 1px solid rgba(124, 156, 255, 0.35);
+  border-radius: 8px;
+}
+
+.base-stores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.base-store {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.75rem 0.6rem;
+  text-align: center;
+  background: rgba(124, 156, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px 8px 14px 14px;
+}
+
+.base-store b {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.base-store span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 .pillar--keeldeck .brand-word b {
   color: var(--accent);
 }
@@ -447,11 +500,7 @@ main {
   border-bottom-color: rgba(154, 230, 180, 0.8);
 }
 
-@media (min-width: 1000px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* Four products: 2 x 2 from 720px up (inherited from .pillar-grid). */
 
 /* Product cards: text on top, a visual panel pinned to the bottom so the
    three cards line up regardless of description length. */
@@ -634,7 +683,7 @@ main {
 
 @media (min-width: 1000px) {
   .product-grid .pillar-visual {
-    height: 13.5rem;
+    height: 14rem;
   }
 
   .pillar-sub.pillar-visual {
