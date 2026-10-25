@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="KeelCon — industrial software for data, control, and optimization: HISDB, PID, MPC, and RTO."
+      content="KeelCon — dependable real-time software for industrial operations: data access, client platforms, software protection, and advanced control and optimization."
     />
-    <title>KeelCon — Industrial Optimization &amp; Control</title>
+    <title>KeelCon — Industrial Software, Optimization &amp; Control</title>
     <link rel="canonical" href="https://keelcon.com/" />
     <link rel="alternate" hreflang="en" href="https://keelcon.com/" />
     <link rel="alternate" hreflang="zh-CN" href="https://keelcon.com/zh/" />
     <link rel="alternate" hreflang="x-default" href="https://keelcon.com/" />
     <meta property="og:site_name" content="KeelCon" />
-    <meta property="og:title" content="KeelCon — Industrial Optimization &amp; Control" />
+    <meta property="og:title" content="KeelCon — Industrial Software, Optimization &amp; Control" />
     <meta
       property="og:description"
-      content="Industrial software for data, control, and optimization—plus a customizable client platform for equipment makers."
+      content="Dependable real-time software for industrial operations, from data access and client platforms to software protection, control and optimization."
     />
     <meta property="og:url" content="https://keelcon.com/" />
     <meta property="og:type" content="website" />
@@ -27,7 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=2" />
+    <link rel="stylesheet" href="/styles.css?v=3" />
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
@@ -36,8 +36,8 @@
     <header class="site-header">
       <a class="logo" href="https://keelcon.com/">KeelCon</a>
       <nav class="nav" aria-label="Primary">
-        <a class="nav-optional" href="#solutions">Solutions</a>
         <a href="#products">Products</a>
+        <a class="nav-optional" href="#solutions">Solutions</a>
         <a href="#contact">Contact</a>
         <a class="lang-switch" href="/zh/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">中文</a>
       </nav>
@@ -50,11 +50,59 @@
           From <em>data</em> to <em>decisions</em>—on the plant floor.
         </h1>
         <p class="hero-lead">
-          KeelCon connects historian intelligence, classical control, predictive
-          models, and real-time optimization in one coherent stack for process
-          industries.
+          KeelCon works where industry runs in real time, delivering dependable
+          software and engineering that keep operations steady, efficient and
+          smart.
         </p>
-        <a class="cta" href="#solutions">Explore solutions</a>
+        <a class="cta" href="#products">Explore products</a>
+      </section>
+
+      <section id="products" class="products" aria-labelledby="products-heading">
+        <div class="section-head">
+          <h2 id="products-heading">Products</h2>
+          <p class="section-sub">
+            Software you can use on its own, and the building blocks of our
+            control and optimization projects.
+          </p>
+        </div>
+
+        <ul class="pillar-grid product-grid">
+          <li class="pillar pillar--idh">
+            <span class="pillar-tag">Data access</span>
+            <h3 class="pillar-name">IDH <small class="pillar-fullname">Industry Data Hub</small></h3>
+            <p class="pillar-desc">
+              One API to read and write industrial data from OPC UA, OPC DA and
+              Modbus TCP sources, with batch operations and data-quality flags.
+              Runs on Windows and Linux (OPC DA on Windows).
+            </p>
+            <div class="pillar-sub">
+              <p class="pillar-sub-head">
+                <b>pyidh</b> · Python edition <span class="tag-free">Free</span>
+              </p>
+              <p class="pillar-sub-desc">MIT-licensed, for Python 3.8 and later.</p>
+              <code class="pip">pip install pyidh</code>
+              <a class="pillar-link" href="https://pypi.org/project/pyidh/">PyPI →</a>
+            </div>
+          </li>
+          <li class="pillar pillar--keeldeck">
+            <span class="pillar-tag">Client platform</span>
+            <h3 class="pillar-name">KeelDeck</h3>
+            <p class="pillar-desc">
+              A customizable industrial client platform for equipment makers,
+              software vendors, and integrators—your branding, tailored screens
+              and workflows, and integration with your own back-end services.
+            </p>
+          </li>
+          <li class="pillar pillar--guard">
+            <span class="pillar-tag">Software protection</span>
+            <h3 class="pillar-name">KeelGuard</h3>
+            <p class="pillar-desc">
+              Licensing and protection for industrial software, so you can ship
+              and monetize your applications with confidence.
+            </p>
+            <a class="pillar-link" href="https://guard.keelcon.com/en/">guard.keelcon.com →</a>
+          </li>
+        </ul>
       </section>
 
       <section id="solutions" class="solutions" aria-labelledby="solutions-heading">
@@ -101,36 +149,6 @@
               energy, and product specs—while honoring safety and equipment
               envelopes.
             </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="products" class="products" aria-labelledby="products-heading">
-        <div class="section-head">
-          <h2 id="products-heading">Products</h2>
-          <p class="section-sub">
-            Building blocks we deliver alongside our control and optimization work.
-          </p>
-        </div>
-
-        <ul class="pillar-grid">
-          <li class="pillar pillar--xoptcon">
-            <span class="pillar-tag">Client platform</span>
-            <h3 class="pillar-name">Xoptcon</h3>
-            <p class="pillar-desc">
-              A customizable industrial client platform for equipment makers,
-              software vendors, and integrators—your branding, tailored screens
-              and workflows, and integration with your own back-end services.
-            </p>
-          </li>
-          <li class="pillar pillar--guard">
-            <span class="pillar-tag">Software protection</span>
-            <h3 class="pillar-name">KeelGuard</h3>
-            <p class="pillar-desc">
-              Licensing and protection for industrial software, so you can ship
-              and monetize your applications with confidence.
-            </p>
-            <a class="pillar-link" href="https://guard.keelcon.com/en/">guard.keelcon.com →</a>
           </li>
         </ul>
       </section>

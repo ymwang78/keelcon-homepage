@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="KeelCon：面向工业的数据、控制与优化软件，涵盖 HISDB、PID、MPC 与 RTO。"
+      content="KeelCon：为工业实时现场提供可靠的软件与技术支撑，涵盖数据接入、客户端平台、软件保护以及先进控制与优化。"
     />
-    <title>KeelCon｜工业优化与控制</title>
+    <title>KeelCon｜工业软件、优化与控制</title>
     <link rel="canonical" href="https://keelcon.com/zh/" />
     <link rel="alternate" hreflang="en" href="https://keelcon.com/" />
     <link rel="alternate" hreflang="zh-CN" href="https://keelcon.com/zh/" />
     <link rel="alternate" hreflang="x-default" href="https://keelcon.com/" />
     <meta property="og:site_name" content="KeelCon" />
-    <meta property="og:title" content="KeelCon｜工业优化与控制" />
+    <meta property="og:title" content="KeelCon｜工业软件、优化与控制" />
     <meta
       property="og:description"
-      content="面向工业的数据、控制与优化软件，以及为设备厂商打造的可定制客户端平台。"
+      content="为工业实时现场提供可靠的软件与技术支撑：数据接入、客户端平台、软件保护，以及先进控制与优化。"
     />
     <meta property="og:url" content="https://keelcon.com/zh/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
-    <link rel="stylesheet" href="/styles.css?v=2" />
+    <link rel="stylesheet" href="/styles.css?v=3" />
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
@@ -30,8 +30,8 @@
     <header class="site-header">
       <a class="logo" href="/zh/">KeelCon</a>
       <nav class="nav" aria-label="主导航">
-        <a href="#solutions">解决方案</a>
         <a href="#products">产品</a>
+        <a href="#solutions">解决方案</a>
         <a href="#contact">联系</a>
         <a class="lang-switch" href="/?lang=en" hreflang="en" lang="en" data-lang="en">EN</a>
       </nav>
@@ -44,9 +44,51 @@
           从<em>数据</em>到<em>决策</em>，<br />直达生产现场。
         </h1>
         <p class="hero-lead">
-          KeelCon 把历史数据、经典控制、预测模型与实时优化整合为一套连贯的技术体系，服务流程工业。
+          KeelCon 扎根工业实时现场，以可靠的软件与工程能力，为生产运行提供持续的技术支撑，让装置运行更平稳、更高效、更智能。
         </p>
-        <a class="cta" href="#solutions">了解解决方案</a>
+        <a class="cta" href="#products">了解产品</a>
+      </section>
+
+      <section id="products" class="products" aria-labelledby="products-heading">
+        <div class="section-head">
+          <h2 id="products-heading">产品</h2>
+          <p class="section-sub">
+            可以单独选用的软件产品，也是我们控制与优化项目的基础组件。
+          </p>
+        </div>
+
+        <ul class="pillar-grid product-grid">
+          <li class="pillar pillar--idh">
+            <span class="pillar-tag">数据接入</span>
+            <h3 class="pillar-name">IDH <small class="pillar-fullname">Industry Data Hub</small></h3>
+            <p class="pillar-desc">
+              用一套接口读写 OPC UA、OPC DA 和 Modbus TCP 数据源，支持批量读写与数据质量标记，运行于 Windows 和 Linux（OPC DA 需 Windows）。
+            </p>
+            <div class="pillar-sub">
+              <p class="pillar-sub-head">
+                <b>pyidh</b> · Python 版 <span class="tag-free">免费</span>
+              </p>
+              <p class="pillar-sub-desc">MIT 开源协议，支持 Python 3.8 及以上。</p>
+              <code class="pip">pip install pyidh</code>
+              <a class="pillar-link" href="https://pypi.org/project/pyidh/">PyPI →</a>
+            </div>
+          </li>
+          <li class="pillar pillar--keeldeck">
+            <span class="pillar-tag">客户端平台</span>
+            <h3 class="pillar-name">KeelDeck</h3>
+            <p class="pillar-desc">
+              面向设备厂商、软件厂商和集成商的可定制工业客户端平台：使用你的品牌，按需定制界面与工作流，并对接你自己的后端服务。
+            </p>
+          </li>
+          <li class="pillar pillar--guard">
+            <span class="pillar-tag">软件保护</span>
+            <h3 class="pillar-name">KeelGuard</h3>
+            <p class="pillar-desc">
+              工业软件的授权与保护，让你放心交付软件并实现商业变现。
+            </p>
+            <a class="pillar-link" href="https://guard.keelcon.com/zh/">guard.keelcon.com →</a>
+          </li>
+        </ul>
       </section>
 
       <section id="solutions" class="solutions" aria-labelledby="solutions-heading">
@@ -85,33 +127,6 @@
             <p class="pillar-desc">
               实时优化：让操作目标与利润、能耗和产品指标保持一致，同时守住安全与设备的运行边界。
             </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="products" class="products" aria-labelledby="products-heading">
-        <div class="section-head">
-          <h2 id="products-heading">产品</h2>
-          <p class="section-sub">
-            我们在控制与优化项目之外一同交付的基础组件。
-          </p>
-        </div>
-
-        <ul class="pillar-grid">
-          <li class="pillar pillar--xoptcon">
-            <span class="pillar-tag">客户端平台</span>
-            <h3 class="pillar-name">Xoptcon</h3>
-            <p class="pillar-desc">
-              面向设备厂商、软件厂商和集成商的可定制工业客户端平台：使用你的品牌，按需定制界面与工作流，并对接你自己的后端服务。
-            </p>
-          </li>
-          <li class="pillar pillar--guard">
-            <span class="pillar-tag">软件保护</span>
-            <h3 class="pillar-name">KeelGuard</h3>
-            <p class="pillar-desc">
-              工业软件的授权与保护，让你放心交付软件并实现商业变现。
-            </p>
-            <a class="pillar-link" href="https://guard.keelcon.com/zh/">guard.keelcon.com →</a>
           </li>
         </ul>
       </section>

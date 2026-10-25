@@ -338,8 +338,84 @@ main {
   color: #c79cff;
 }
 
-.pillar--xoptcon .pillar-name {
+.pillar--keeldeck .pillar-name {
   color: var(--accent);
+}
+
+.pillar--idh .pillar-name {
+  color: #9ae6b4;
+}
+
+.pillar-fullname {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* Free Python edition inside the IDH card */
+.pillar-sub {
+  margin-top: 1.1rem;
+  padding: 0.9rem 1rem;
+  background: rgba(154, 230, 180, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.pillar-sub-head {
+  margin: 0 0 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.pillar-sub-desc {
+  margin: 0 0 0.6rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.tag-free {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+  color: #0b1a12;
+  background: #9ae6b4;
+  border-radius: 999px;
+}
+
+.pip {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: #d7f5e2;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.pillar--idh .pillar-link {
+  margin-top: 0.7rem;
+  color: #9ae6b4;
+  border-bottom-color: rgba(154, 230, 180, 0.35);
+}
+
+.pillar--idh .pillar-link:hover {
+  border-bottom-color: rgba(154, 230, 180, 0.8);
+}
+
+@media (min-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .pillar--guard .pillar-name {
@@ -361,7 +437,7 @@ main {
   border-bottom-color: rgba(242, 210, 122, 0.8);
 }
 
-.products {
+.solutions {
   margin-top: 4.5rem;
 }
 
