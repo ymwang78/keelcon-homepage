@@ -99,10 +99,8 @@ main,
   gap: 1.75rem;
 }
 
-@media (max-width: 480px) {
-  .nav {
-    gap: 1rem;
-  }
+.nav {
+  align-items: center;
 }
 
 .nav a {
@@ -115,6 +113,66 @@ main,
 
 .nav a:hover {
   color: var(--text);
+}
+
+.nav a {
+  white-space: nowrap;
+}
+
+/* The hero CTA already leads to #solutions, so its nav link can go first. */
+@media (max-width: 420px) {
+  .nav .nav-optional {
+    display: none;
+  }
+}
+
+.nav .lang-switch {
+  padding: 0.15rem 0.65rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    gap: 0.75rem;
+  }
+
+  .nav a {
+    font-size: 0.875rem;
+  }
+
+  .nav .lang-switch {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Chinese page: system CJK fonts (Google Fonts is not reliably reachable
+   from mainland China), sans-serif headings with a heavier weight. */
+html[lang="zh-CN"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-display: var(--font-sans);
+}
+
+html[lang="zh-CN"] .hero-title,
+html[lang="zh-CN"] .section-head h2,
+html[lang="zh-CN"] .contact-card h2 {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+html[lang="zh-CN"] .hero-title {
+  max-width: none;
+}
+
+html[lang="zh-CN"] .hero-title em {
+  font-style: normal;
+}
+
+html[lang="zh-CN"] .logo,
+html[lang="zh-CN"] .pillar-name {
+  font-weight: 600;
 }
 
 main {

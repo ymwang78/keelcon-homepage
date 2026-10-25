@@ -9,6 +9,9 @@
     />
     <title>KeelCon — Industrial Optimization &amp; Control</title>
     <link rel="canonical" href="https://keelcon.com/" />
+    <link rel="alternate" hreflang="en" href="https://keelcon.com/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://keelcon.com/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://keelcon.com/" />
     <meta property="og:site_name" content="KeelCon" />
     <meta property="og:title" content="KeelCon — Industrial Optimization &amp; Control" />
     <meta
@@ -17,13 +20,14 @@
     />
     <meta property="og:url" content="https://keelcon.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=2" />
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
@@ -32,9 +36,10 @@
     <header class="site-header">
       <a class="logo" href="https://keelcon.com/">KeelCon</a>
       <nav class="nav" aria-label="Primary">
-        <a href="#solutions">Solutions</a>
+        <a class="nav-optional" href="#solutions">Solutions</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
+        <a class="lang-switch" href="/zh/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">中文</a>
       </nav>
     </header>
 
@@ -125,7 +130,7 @@
               Licensing and protection for industrial software, so you can ship
               and monetize your applications with confidence.
             </p>
-            <a class="pillar-link" href="https://guard.keelcon.com/">guard.keelcon.com →</a>
+            <a class="pillar-link" href="https://guard.keelcon.com/en/">guard.keelcon.com →</a>
           </li>
         </ul>
       </section>
@@ -149,6 +154,12 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      // Remember an explicit language choice; the edge redirect on "/" honours it.
+      document.querySelectorAll("[data-lang]").forEach(function (a) {
+        a.addEventListener("click", function () {
+          document.cookie = "kc_lang=" + a.dataset.lang + "; path=/; max-age=31536000; SameSite=Lax; Secure";
+        });
+      });
     </script>
   </body>
 </html>
