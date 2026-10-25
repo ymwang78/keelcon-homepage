@@ -357,8 +357,27 @@ main {
   line-height: 1.65;
 }
 
-.pillar--hisdb .pillar-name {
-  color: #7cdbff;
+.pillar--keelbase .pillar-link {
+  color: #7c9cff;
+  border-bottom-color: rgba(124, 156, 255, 0.35);
+}
+
+.pillar--keelbase .pillar-link:hover {
+  border-bottom-color: rgba(124, 156, 255, 0.8);
+}
+
+#keelbase {
+  scroll-margin-top: 1.5rem;
+}
+
+/* In the pillars, the KeelBase lockup matches the size of PID / MPC / RTO. */
+.solutions .brand-lockup {
+  font-size: 2rem;
+}
+
+.solutions .brand-lockup .brand-mark {
+  width: 36px;
+  height: 36px;
 }
 
 .pillar--pid .pillar-name {
