@@ -342,7 +342,7 @@ main {
   color: var(--accent);
 }
 
-.pillar--idh .pillar-name {
+.pillar--keellink .pillar-name {
   color: #9ae6b4;
 }
 
@@ -402,13 +402,13 @@ main {
   border-radius: 8px;
 }
 
-.pillar--idh .pillar-link {
+.pillar--keellink .pillar-link {
   margin-top: 0.7rem;
   color: #9ae6b4;
   border-bottom-color: rgba(154, 230, 180, 0.35);
 }
 
-.pillar--idh .pillar-link:hover {
+.pillar--keellink .pillar-link:hover {
   border-bottom-color: rgba(154, 230, 180, 0.8);
 }
 
