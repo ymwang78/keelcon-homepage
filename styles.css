@@ -418,6 +418,99 @@ main {
   }
 }
 
+/* Product cards: text on top, a visual panel pinned to the bottom so the
+   three cards line up regardless of description length. */
+.product-grid .pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-grid .pillar-desc {
+  margin-bottom: 1.1rem;
+}
+
+.product-grid .pillar-link {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+
+.pillar-visual {
+  align-self: stretch;
+  margin-top: auto;
+}
+
+.pillar-sub.pillar-visual {
+  margin-top: auto;
+}
+
+.pillar-sub .pillar-link {
+  margin-bottom: 0;
+}
+
+.deck-caps,
+.guard-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.cap-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cap-list li {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  color: var(--text);
+  background: rgba(62, 224, 196, 0.07);
+  border: 1px solid rgba(62, 224, 196, 0.2);
+  border-radius: 999px;
+}
+
+.guard-visual .cap-list li {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  background: rgba(242, 210, 122, 0.07);
+  border-color: rgba(242, 210, 122, 0.22);
+}
+
+.dongle-art {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.dongle-art text {
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 1000px) {
+  .product-grid .pillar-visual {
+    height: 13.5rem;
+  }
+
+  .pillar-sub.pillar-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .pillar--guard .pillar-name {
   color: #f2d27a;
 }

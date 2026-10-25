@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://keelcon.com/zh/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
-    <link rel="stylesheet" href="/styles.css?v=3" />
+    <link rel="stylesheet" href="/styles.css?v=4" />
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
@@ -64,7 +64,7 @@
             <p class="pillar-desc">
               用一套接口读写 OPC UA、OPC DA 和 Modbus TCP 数据源，支持批量读写与数据质量标记，运行于 Windows 和 Linux（OPC DA 需 Windows）。
             </p>
-            <div class="pillar-sub">
+            <div class="pillar-sub pillar-visual">
               <p class="pillar-sub-head">
                 <b>pyidh</b> · Python 版 <span class="tag-free">免费</span>
               </p>
@@ -79,6 +79,9 @@
             <p class="pillar-desc">
               面向设备厂商、软件厂商和集成商的可定制工业客户端平台：使用你的品牌，按需定制界面与工作流，并对接你自己的后端服务。
             </p>
+            <div class="pillar-visual deck-caps">
+              <ul class="cap-list"><li>品牌定制</li><li>界面定制</li><li>工作流定制</li><li>后端对接</li></ul>
+            </div>
           </li>
           <li class="pillar pillar--guard">
             <span class="pillar-tag">软件保护</span>
@@ -87,6 +90,41 @@
               工业软件的授权与保护，让你放心交付软件并实现商业变现。
             </p>
             <a class="pillar-link" href="https://guard.keelcon.com/zh/">guard.keelcon.com →</a>
+            <div class="pillar-visual guard-visual">
+              <svg class="dongle-art" viewBox="30 70 370 160" role="img" aria-label="KeelGuard USB dongle">
+                <defs>
+                  <linearGradient id="kg-body" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#1b2433" />
+                    <stop offset="1" stop-color="#0d121b" />
+                  </linearGradient>
+                  <linearGradient id="kg-edge" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#f2d27a" stop-opacity="0.9" />
+                    <stop offset="1" stop-color="#3ee0c4" stop-opacity="0.7" />
+                  </linearGradient>
+                  <radialGradient id="kg-glow" cx="0.5" cy="0.5" r="0.5">
+                    <stop offset="0" stop-color="#f2d27a" stop-opacity="0.28" />
+                    <stop offset="1" stop-color="#f2d27a" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+                <ellipse cx="210" cy="150" rx="180" ry="80" fill="url(#kg-glow)" />
+                <g transform="rotate(-10 210 150)">
+                  <rect x="42" y="118" width="70" height="44" rx="3" fill="#c7ced8" stroke="#8a95a5" />
+                  <rect x="56" y="128" width="12" height="8" rx="1" fill="#6b7686" />
+                  <rect x="84" y="128" width="12" height="8" rx="1" fill="#6b7686" />
+                  <rect x="104" y="98" width="250" height="84" rx="26" fill="url(#kg-body)" stroke="url(#kg-edge)" stroke-width="2" />
+                  <circle cx="332" cy="140" r="6" fill="none" stroke="#3a4557" stroke-width="3" />
+                  <g transform="translate(138 118)">
+                    <rect width="44" height="44" rx="6" fill="#111823" stroke="#f2d27a" stroke-opacity="0.8" />
+                    <rect x="12" y="12" width="20" height="20" rx="3" fill="#f2d27a" fill-opacity="0.9" />
+                    <path d="M-6 10h6M-6 22h6M-6 34h6M44 10h6M44 22h6M44 34h6M10 -6v6M22 -6v6M34 -6v6M10 44v6M22 44v6M34 44v6" stroke="#f2d27a" stroke-opacity="0.6" stroke-width="2" />
+                  </g>
+                  <text x="200" y="138" fill="#e8eef6" font-size="20" font-weight="700" letter-spacing="0.5">KeelGuard</text>
+                  <text x="200" y="158" fill="#8a9bb0" font-size="9.5" letter-spacing="1.4">SECURE LICENSE KEY</text>
+                  <circle cx="310" cy="118" r="3.5" fill="#3ee0c4" />
+                </g>
+              </svg>
+              <ul class="cap-list"><li>安全芯片</li><li>免驱 HID</li><li>OEM 定制</li></ul>
+            </div>
           </li>
         </ul>
       </section>
